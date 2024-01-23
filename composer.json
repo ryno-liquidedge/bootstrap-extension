@@ -1,5 +1,5 @@
 {
-    "name": "liquidedge/bootstrap-extension",
+    "name": "liquidedge-app/bootstrap-extension",
     "description": "An extension library for Bootstrap 5",
     "autoload": {}
 }
