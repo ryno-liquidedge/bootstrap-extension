@@ -84,20 +84,20 @@ docReady(() => {
      *  select form item placeholder
      * ------------------------------ */
 
-    var selects = document.getElementsByClassName('form-select');
-    for (var i = 0; i < selects.length; i++) {
-        if (selects[i].hasAttribute('required') && selects[i].firstElementChild.value === '') {
-            selects[i].firstElementChild.setAttribute('hidden', 'hidden');
-        }
-        if (selects[i].options[selects[i].selectedIndex].text !== selects[i].firstElementChild.innerHTML) {
-            selects[i].classList.add('normalColor');
-        }
-        selects[i].addEventListener('change', function () {
-            if (!this.classList.contains('normalColor')) {
-                this.classList.add('normalColor');
-            }
-        });
-    }
+    // var selects = document.getElementsByClassName('form-select');
+    // for (var i = 0; i < selects.length; i++) {
+    //     if (selects[i].hasAttribute('required') && selects[i].firstElementChild.value === '') {
+    //         selects[i].firstElementChild.setAttribute('hidden', 'hidden');
+    //     }
+    //     if (selects[i].options[selects[i].selectedIndex].text !== selects[i].firstElementChild.innerHTML) {
+    //         selects[i].classList.add('normalColor');
+    //     }
+    //     selects[i].addEventListener('change', function () {
+    //         if (!this.classList.contains('normalColor')) {
+    //             this.classList.add('normalColor');
+    //         }
+    //     });
+    // }
 
     /* ------------
      *  hover-zoom
