@@ -109,7 +109,7 @@ docReady(() => {
         hoverZoomBox = document.createElement('div');
         hoverZoomBox.classList.add('o-hidden');
         hoverZoomBox.innerHTML = hoverZoomImages[i].outerHTML;
-        hoverZoomDiv[i].replaceChild(hoverZoomBox, hoverZoomImages[i]);
+        if(hoverZoomDiv[i].length) hoverZoomDiv[i].replaceChild(hoverZoomBox, hoverZoomImages[i]);
     }
 
     /* ---------------
